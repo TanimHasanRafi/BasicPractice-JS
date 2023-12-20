@@ -8,12 +8,19 @@
 <body>
     <p>Tanim's Task manager</p>
     <input type="text" class="task__input">
-    <button onclick="
-    const taskInputElement = document.querySelector('.task__input')
-    const taskName = taskInputElement.value
-    console.log(taskName)
-    taskInputElement.value = ''
-    
-    "  >Add</button>
+    <!-- <input type="date"> -->
+    <button onclick="taskAdd()"  >Add</button>
+     <script>
+        function taskAdd(){
+            const taskInputElement = document.querySelector('.task__input')
+            const taskName = taskInputElement.value 
+            console.log(taskName)
+            taskInputElement.value = ''
+
+
+
+        }
+
+     </script>
 </body>
 </html>
