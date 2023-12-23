@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" class="task__input">
+    <input type="date" >
+    <button onclick="addtask()"> Add</button>
+    <div class="task__container"></div>
+
+
+    <script>
+
+        let tasks = ['']
+        renderTasks()
+
+        function addtask(){
+            let taskInput = document.querySelector('.task__input')
+            let newTask = taskInput.value 
+            taskInput.value = ''
+            tasks.push(newTask)
+            renderTasks()
+            
+        }
+
+    function renderTasks(){
+        document.querySelector('.task__container').innerHTML=''
+
+        tasks.forEach(function(tasksTitle){
+            let element = document.createElement('div')
+            element.innerText = tasksTitle
+            let taskList = document.querySelector('.task__container')
+            taskList.appendChild(element)
+
+
+        });
+    }
+
+
+    </script>
+</body>
+</html>
