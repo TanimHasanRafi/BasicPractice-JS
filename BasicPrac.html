@@ -8,10 +8,18 @@
 <body>
   <script>
 
-var text= "Tanim Hasan";
-
-document.write(text.length);
+var text1= prompt("Enter the First_name:" );
+document.write('First name is: ' + text1);
+var text2= prompt("Enter the Second_name:" );
+document.write('</br> Second Name is: ' + text2);
+var fullName = text1 +' '+ text2 ;
+document.write( '</br> Full Name is: ' + fullName + '</br>');
+document.write( 'total length:' +fullName.length);
+fullName=fullName.toUpperCase('');
+document.write('</br> Uppercase: ' +fullName);
+// fullName=fullName.charAt(2);
+document.write('</br>Positon 2 :' +fullName.charAt(2));
   </script>
-    
+     
 </body>
 </html>
