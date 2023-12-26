@@ -7,29 +7,13 @@
 </head>
 <body>
   <script>
+var base = parseFloat(prompt( 'take base value = ' ));
+var Height = parseFloat(prompt( 'take height value ='));
+var area = base * Height;
+document.write(area);
 
-var text1 = prompt('Enter the First value = ');
-document.write('first value = ' + text1);
-var text2 = prompt('Enter the second value = ');
-document.write(' </br> second value= ' +text2);
-
-text1 =parseInt(text1);
-text2 =parseInt(text2);
-
-var sum,sub,multy,div,modul;
-
-sum = text1 + text2;
-document.write('</br>' + text1 + '+'+ text1 +' = ' + sum);
-
-sub = text1 - text2;
-document.write('</br>' + text1+ '-' +text2+ ' = ' +sub);
- 
-multy = text1*text2;
-document.write('</br>' + text1+ '*' +text2+ ' = ' +multy);
- div = text1/text2;
- document.write('</br>' + text1+ '/' +text2+ ' = ' +div);
- modul = text1 % text2;
- document.write('</br>' + text1+ '%' +text2+ ' = ' +modul);
+var squareRoot = (base*Height)/2;
+document.write('</br> squarRoot = ' +squareRoot);
 
   </script>
      
