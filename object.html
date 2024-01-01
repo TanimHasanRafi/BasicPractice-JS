@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(name,age,cgpa,lang){
+            this.name = name;
+            this.age = age;
+            this.cgpa =cgpa;
+            this.lang = lang;
+
+            this.display = function(){
+
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.cgpa);
+                console.log(this.lang);
+            }
+
+        }
+                var student1 = new Student("Tanim Hasan", 24, 3.88,"English")
+                var student2 = new Student("Rafi", 0,4.88,"Bangla")
+                student1.display();
+                student2.display();
+
+        // var number={
+        //     name:"Tanim",
+        //     age:24,
+        //     cgpa:4.50,
+        //     address:"sonapur"}
+        // console.log(number.name);
+        // console.log(number.age);
+    </script>
+</body>
+</html>
