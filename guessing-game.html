@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <script>
+    var numberOfWin = 0;
+    var numberOfLost =0;
+    for( var i = 1; i<= 5; i++){
+
+   var guessNumber=parseInt(prompt('Enter the guessing value 1 to 5:'));
+   var randomNumber = Math.floor(Math.random()*5) + 1;
+   if( guessNumber == randomNumber){
+    document.write( "</br> you are win : " + randomNumber + "</br>");
+    numberOfWin++;
+   }
+   else {
+    document.write("</br> you are lost . ramdom number was : " + randomNumber + "</br>");
+    numberOfLost++;
+   }
+    }
+    document.write( '</br> total win = ' + numberOfWin);
+    document.write( '</br> total lost = ' + numberOfLost);
+  </script>  
+</body>
+</html>
