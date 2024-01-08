@@ -6,22 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="contain"></h1>
-    
-    
-    <input type="text" placeholder="write here">
-    <button onclick="myMessenge()">add</button>
-    <h1 class="contain1">jgjgh </h1>
+    <input type="text" placeholder="type here">
+    <button onclick="addTask()">add</button>
+    <h1 class="contain" style="color: red; background: black;" ></h1>
+    <div class="text-dip"></div>
     <script>
-        
-       
-        function myMessenge(){
-            
-            var addTask = document.querySelector(".contain1").innerHTML="Tanim Hasan";
-        
-            
-            }
-    
+        function addTask(){
+
+           var addTask = document.querySelector(".contain").innerHTML="Tanim Hasan";
+
+        }
+
+        var headding1 = document.createElement("h1");
+         var text = document.createTextNode("Tanim Hasan");
+         headding1.appendChild(text);
+
+       var addClass= document.querySelector(".text-dip");
+       addClass.appendChild(headding1);
+
+
+
     </script>
 </body>
 </html>
