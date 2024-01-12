@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my Practics</h1>
+    <input class="input-text" type="text" placeholder="write here" >
+    
+    <button onclick="addTask()">add</button>
+    <div class="container"></div>
+    <script>
+        function addTask(){
+        let addText = document.querySelector(".input-text");
+        let addValue =addText.value;
+        let newElement = document.createElement("p");
+        newElement.innerText = addValue;
+        let container = document.querySelector(".container");
+        container.appendChild(newElement);
+        addText.value = "";
+
+        }
+    </script>
+
+</body>
+</html>
