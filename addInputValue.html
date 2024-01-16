@@ -8,19 +8,25 @@
 <body>
     <h1>This is my Practics</h1>
     <input class="input-text" type="text" placeholder="write here" >
-    
+     .
     <button onclick="addTask()">add</button>
+    <button >Reset</button>
     <div class="container"></div>
     <script>
         function addTask(){
-        let addText = document.querySelector(".input-text");
-        let addValue =addText.value;
-        let newElement = document.createElement("p");
-        newElement.innerText = addValue;
-        let container = document.querySelector(".container");
-        container.appendChild(newElement);
-        addText.value = "";
-
+        // let addText = document.querySelector(".input-text");
+        // let addValue =addText.value;
+        // let newElement = document.createElement("p");
+        // newElement.innerText = addValue;
+        // let container = document.querySelector(".container");
+        // container.appendChild(newElement);
+        // addText.value = "";
+        var addDate = new Date();
+       var newElement = document.createElement("p");
+     newElement.innerText = addDate;
+     var container = document.querySelector(".container");
+     container.appendChild(newElement);
+            addDate.value = "";
         }
     </script>
 
